@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="parentContainer">
+        <div class="container">
+            <p id="date"></p>
+            <h2>My Tasks</h2>
+            <p>The simplest way to keep track of your tasks.</p>
+
+            <form id="formContainer" class="formContainer">
+                <label>Add A Task</label><br>
+                <input id="input" type="text" placeholder="What needs to be done ?" />
+                <div class="btn-container">
+                    <div class="category" id="category"></div>
+                    <div>
+                        <label class="priority-label">
+                            <input type="checkbox" class="priority" id="priority"> 
+                            <span class="text-priority">High Priority</span>
+                        </label>
+                        <button type="submit">Add</button>
+                    </div>
+                </div>
+            </form>
+
+            <p id="message"></p>
+            <div id="todo-list" class="todo-list"></div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
