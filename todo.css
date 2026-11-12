@@ -266,3 +266,152 @@ input[type="checkbox"] {
 .tags-container .priority-high {
     margin: 0;
 }
+
+/* TABLET RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+
+    .parentContainer {
+        margin: 30px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .todo {
+        width: 100%;
+    }
+
+    .btn-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .eachCategory {
+        margin: 0;
+    }
+
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 480px) {
+
+    .parentContainer {
+        margin: 20px 0;
+    }
+
+    .container {
+        width: 92%;
+        gap: 12px;
+    }
+
+    .container h2 {
+        font-size: 1.7rem;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .formContainer label {
+        font-size: 14px;
+    }
+
+    .formContainer input:not([type="checkbox"]) {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 5px 0;
+    }
+
+    .eachCategory {
+        margin: 0;
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .priority-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .btn-container button {
+        padding: 10px 20px;
+    }
+
+    .todo {
+        width: 100%;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .task-content {
+        gap: 8px;
+        min-width: 0;
+    }
+
+    .task-details {
+        min-width: 0;
+    }
+
+    .task-content .text {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .tags-container {
+        flex-wrap: wrap;
+    }
+
+    .priority-high,
+    .tag {
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+    .todo-actions {
+        gap: 5px;
+    }
+
+    .todo-actions button {
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+
+    .toggle-btn {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+    }
+
+}
